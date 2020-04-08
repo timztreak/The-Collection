@@ -1,0 +1,38 @@
+#musicButton{
+    background-color: cyan;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-left: 20%;
+    font-size: 125%;
+}
+#backToStart{
+    background-color:cyan;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    font-size: 125%;
+}
+#restartGame{
+    background-color: cyan;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-left: 10%;
+    font-size: 125%;
+}
+#musicButton:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
+#backToStart:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
+#restartGame:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}

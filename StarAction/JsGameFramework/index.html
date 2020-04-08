@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SpaceAction</title>
+	</head>
+	<body onLoad="initialize()">
+		<canvas id="myCanvas" width="600" height="850" style="border:10px solid cyan"></canvas>
+		<script src="input_control.js"></script>
+		<link rel="stylesheet" href="game.css">
+		<!--******** BEGIN Starship game ********-->
+		<div class="Menu">
+			<button id="backToStart" onclick="music()">Back</button>
+			<button id="musicButton" onclick="music()">Musik</button>
+			<button id="restartGame" onclick="restartGame()">Restart</button>
+		</div>
+		<script src="game-menu.js"></script>
+		<script src="Starship/LaserShot.js"></script>
+		<script src="Starship/Player1.js"></script>
+		<script src="Starship/Player2.js"></script>
+		<!--******** END Starship game **********-->		
+		<script src="game.js"></script>
+	</body>
+</html>
