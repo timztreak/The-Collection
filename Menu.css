@@ -6,13 +6,16 @@ body{
 }
 .header{
   color: white;
-  font-size: 125%;
+  font-size: 135%;
+  margin-left: 43%;
+  margin-top: 5%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .Menu{
   width: 13%;
   height: 50%;
   margin-top: 2%;
+  margin-left: 43%;
   position: absolute;
 }
 .Menu h2{
