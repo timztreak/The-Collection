@@ -228,28 +228,19 @@ function draw(ctx) {
 	var Wall3 = new Wall(0, 422, 600, 5, "cyan");
 	var spawn1 = new Wall(300, 750, 0, 0, "cyan");	
 
-function collision(ctx){
-    //Spelare 1
-    if(NotP1.x < Wall1.x + Wall1.width && NotP1.x > Wall1.x){
-		NotP1.x = spawn1;
-		return alert("Player 1 died, Player 2 Wins");
-    }
-    else if(NotP1.x > Wall2.x + Wall2.width && NotP1.x > Wall2.x){
-		NotP1.x = spawn1;
-		return alert("Player 1 died, Player 2 Wins");
-    }
-    else if(NotP1.x > Wall3.x + Wall3.width && NotP1.x > Wall3.x){
-		NotP1.x = NotP2.x;
-		return alert("Player 2 died, Player 1 Wins");
-    }
-    //Spelare 2
-    if(NotP2.x < Wall1.x + Wall1.width && NotP2.x > Wall1.x){
-		NotP2.x = NotP1.x;
-		return alert("Player 2 died, Player 1 Wins");
-    }
-    else if(NotP2.x > Wall2.x + Wall2.width && NotP2.x > Wall2.x){
-		NotP2.x = NotP1.x;
-		return alert("Player 2 died, Player 1 Wins");
-    }
+	function collision(ctx){
+		if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
+		   NotP1.y <= Wall3.y + Wall3.height &&
+		   NotP1.y >= Wall3.y || NotP1.y >= 850) {
+			 alert("Player 1 died, Player 2 Wins");
+		}
+	  
+		if(NotP2.x <= Wall1.x || NotP2.x >= Wall2.x || 
+		   NotP2.y <= Wall3.y + Wall3.height &&
+		   NotP2.y >= Wall3.y || NotP2.y <= 0) {
+			 alert("Player 2 died, Player 1 Wins");
+		  }
+		Wall3.draw(ctx);
+	  }
 
 }
