@@ -198,7 +198,7 @@ function draw(ctx) {
 	// Låt skeppet rita sig självt och sådant som skeppet ansvarar för.
 	NotP1.draw(ctx);
 	NotP2.draw(ctx);
-	collision(ctx);
+	WallCollision(ctx);
 
 	//******************* END Starship game ********************************
 	
@@ -228,7 +228,7 @@ function draw(ctx) {
 	var Wall3 = new Wall(0, 422, 600, 5, "cyan");
 	var spawn1 = new Wall(300, 750, 0, 0, "cyan");	
 
-	function collision(ctx){
+	function WallCollision(ctx){
 		if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
 		   NotP1.y <= Wall3.y + Wall3.height &&
 		   NotP1.y >= Wall3.y || NotP1.y >= 850) {
@@ -243,4 +243,4 @@ function draw(ctx) {
 		Wall3.draw(ctx);
 	  }
 
-}
+
