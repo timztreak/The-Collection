@@ -189,7 +189,7 @@ function draw(ctx) {
 	ctx.fillRect(0, 0, gGameWidth, gGameHeight);
 
 	// Rita målet
-	ctx.drawImage(imageObj, 0, 0, 1920, 1080);
+	ctx.drawImage(imageObj, 0, 0, 650, 850);
 
 	if(gAppStepCount % 60 == 0){
 		console.log(gGameWidth + " , " + gGameHeight);

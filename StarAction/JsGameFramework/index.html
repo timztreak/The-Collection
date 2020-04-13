@@ -9,16 +9,21 @@
 		<script src="input_control.js"></script>
 		<link rel="stylesheet" href="game.css">
 		<!--******** BEGIN Starship game ********-->
-		<div class="Menu">
-			<button id="backToStart" onclick="music()">Back</button>
-			<button id="musicButton" onclick="music()">Musik</button>
-			<button id="restartGame" onclick="restartGame()">Restart</button>
-		</div>
-		<script src="game-menu.js"></script>
 		<script src="Starship/LaserShot.js"></script>
 		<script src="Starship/Player1.js"></script>
 		<script src="Starship/Player2.js"></script>
-		<!--******** END Starship game **********-->		
 		<script src="game.js"></script>
+		<!--******** END Starship game **********-->	
+		<!--******** Här börjar Tim Hjorts arbete ********-->
+		<audio id="myAudio" src="Sounds/StarAction-Music.mp3" autoplay></audio>
+		<div class="Menu">
+			<button id="backToStart" onclick="loadHome()">Back</button>
+			<button id="musicButton" onclick="togglePlay()">Mute</button>
+			<button id="restartGame" onclick="restartGame()">Restart</button>
+		</div>
+		<div id ="home"> </div>
+		<script src="game-menu.js"></script>
+		<!--******** Här slutar Tim Hjorts arbete ********-->	
+		
 	</body>
 </html>
