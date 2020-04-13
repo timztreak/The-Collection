@@ -26,6 +26,11 @@
     opacity: 0.85;
     color: white;
 }
+#musicButton:active{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
 #backToStart:hover{
     background-color: black;
     opacity: 0.85;
