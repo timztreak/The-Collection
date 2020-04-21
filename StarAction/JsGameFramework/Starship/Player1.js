@@ -64,6 +64,9 @@ class Player1
 					this.laserCnt = 0;
 				}
 			}
+			var laserSkot = new Audio("laserskot.mp3");
+			laserSkot.src = "laserskot.mp3";
+			laserSkot.play();
 		}
 		
 		// Updatera alla laserskott
