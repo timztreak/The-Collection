@@ -114,7 +114,7 @@ class LaserShotP2
 		if (this.y > 0)
 		{
 			ctx.fillStyle = "white";
-			ctx.fillRect(this.x - (this.width / 2), this.y - this.length, this.width, this.length);
+			ctx.fillRect(this.x - (this.width / 2), this.y + this.length, this.width, this.length);
 		}
 	}
 }
