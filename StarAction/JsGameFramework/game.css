@@ -26,8 +26,8 @@
     opacity: 0.85;
     color: white;
 }
-#musicButton:active{
-    background-color: black;
+#musicButton:ho{
+    background-color: rgb(201, 174, 174);
     opacity: 0.85;
     color: white;
 }

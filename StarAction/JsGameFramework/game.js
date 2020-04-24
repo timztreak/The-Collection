@@ -199,8 +199,7 @@ function draw(ctx) {
 	NotP1.draw(ctx);
 	NotP2.draw(ctx);
 	WallCollision(ctx);
-	P1BulletCollision(ctx);
-	P2BulletCollision(ctx);
+	
 	//******************* END Starship game ********************************
 	
 	//######################################################################
@@ -244,7 +243,7 @@ function draw(ctx) {
 		Wall3.draw(ctx);
 	  }
 	  
-	function P1BulletCollision(ctx){
+	function P1BulletCollision(x, y){
 		for (var b=0;b<LaserShot.length;b++){
 			ctx.beginPath();
 			ctx.arc(LaserShot[b].x,LaserShot[b].y,2,0,Math.PI*2);
@@ -257,7 +256,7 @@ function draw(ctx) {
 			}
 		}
 	}
-	function P2BulletCollision(ctx){
+	function P2BulletCollision(x, y){
 		for (var b=0;b<LaserShotP2.length;b++){
 			ctx.beginPath();
 			ctx.arc(LaserShotP2[b].x,LaserShotP2[b].y,2,0,Math.PI*2);
