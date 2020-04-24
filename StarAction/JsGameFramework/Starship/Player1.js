@@ -65,7 +65,7 @@ class Player1
 				}
 			}
 			var laserSkot = new Audio("laserskot.mp3");
-			laserSkot.src = "laserskot.mp3";
+			laserSkot.src = "laserskot.mp3#t0.5, 2.5";
 			laserSkot.play();
 		}
 		
