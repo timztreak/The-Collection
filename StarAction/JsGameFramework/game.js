@@ -158,14 +158,13 @@ function iterateApp() {
 			break;
     }
 }
-
+//Bullet Collision 
 //==========================================================================
 // Funktion som kan utföra alla förflyttningar i spelet.
 //==========================================================================
 function update() {
-      
-
 	//******************* BEGIN Starship game ******************************
+	NotP1BulletCollided();
 	NotP1.update();
 	NotP2.update();
 	//******************* END Starship game ********************************
@@ -177,6 +176,16 @@ function update() {
 
 	return 0;
 }
+function NotP1BulletCollided(){
+	if(LaserShot.x >= NotP2.x && LaserShot.x <= NotP2.x + 
+		NotP2.width && LaserShot.y >= NotP2.y && LaserShot.y <= 
+		NotP2.y + NotP2.height)
+	{ 
+	 alert("TEST");
+
+	}
+}
+console.log(NotP1BulletCollided);
 //==========================================================================
 // Ritar (renderar) bakgrund och alla objekt som ska visas i spelet
 // Param ctx: kontexten för och referensen till den canvas som ska renderas
@@ -207,8 +216,7 @@ function draw(ctx) {
 	//#      eller genom anrop till andra funktioner eller metoder i objekt.
 	//######################################################################
 }
-	//Väggar 
-
+	//Väggar
 	class Wall{
 		constructor(x, y, w, h, c){
 			this.x = x;
@@ -243,30 +251,3 @@ function draw(ctx) {
 		Wall3.draw(ctx);
 	  }
 	  
-	function P1BulletCollision(x, y){
-		for (var b=0;b<LaserShot.length;b++){
-			ctx.beginPath();
-			ctx.arc(LaserShot[b].x,LaserShot[b].y,2,0,Math.PI*2);
-			ctx.fill();     
-			LaserShot[b].x += LaserShot[b].dx;
-			for (var j=NotP1.length; j-- >0;) {
-				if(LaserShot[b].x>NotP1[j].x && LaserShot[b].x<NotP1[j].x+NotP1[j].width && LaserShot[b].y>NotP1[j].y && LaserShot[b].y<NotP1[j].y+NotP1[j].height){
-					NotP1.splice(j,1);
-				}  
-			}
-		}
-	}
-	function P2BulletCollision(x, y){
-		for (var b=0;b<LaserShotP2.length;b++){
-			ctx.beginPath();
-			ctx.arc(LaserShotP2[b].x,LaserShotP2[b].y,2,0,Math.PI*2);
-			ctx.fill();     
-			LaserShotP2[b].x += LaserShotP2[b].dx;
-			for (var j=NotP2.length; j-- >0;) {
-				if(LaserShotP2[b].x>NotP2[j].x && NotP2[b].x<NotP2[j].x+NotP2[j].width && LaserShotP2[b].y>NotP2[j].y && LaserShotP2[b].y<NotP2[j].y+NotP2[j].height){
-					NotP2.splice(j,1);
-				}  
-			}
-		}
-	}
-
