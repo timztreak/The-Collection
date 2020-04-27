@@ -23,8 +23,9 @@ class Player1
 		// Ladda 5 återanvändbara laserskott i en pool
 		for (var i = 0; i < 5; i++)
 		{
-			this.laserPool.push(new LaserShot(50, 2, 1));
+			this.laserPool.push(new LaserShot(50, 2, 5));
 		}
+		
 	}
 
 	//==========================================================================
@@ -65,7 +66,7 @@ class Player1
 				}
 			}
 			var laserSkot = new Audio("laserskot.mp3");
-			laserSkot.src = "laserskot.mp3#t0.5, 2.5";
+			laserSkot.src = "laserskot.mp3#t0.2, 0.5";
 			laserSkot.play();
 		}
 		

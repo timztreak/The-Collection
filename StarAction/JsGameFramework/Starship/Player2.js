@@ -22,7 +22,7 @@ class Player2
 		// Ladda 5 återanvändbara laserskott i en pool
 		for (var i = 0; i < 5; i++)
 		{
-			this.laserPool.push(new LaserShotP2(50, 2, 5));
+			this.laserPool.push(new LaserShotP2(50, 2, 5,));
 		}
 	}
 
