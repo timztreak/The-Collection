@@ -164,6 +164,7 @@ function iterateApp() {
 //==========================================================================
 function update() {
 	//******************* BEGIN Starship game ******************************
+	NotP2BulletCollided();
 	NotP1BulletCollided();
 	NotP1.update();
 	NotP2.update();
@@ -176,16 +177,29 @@ function update() {
 
 	return 0;
 }
-function NotP1BulletCollided(){
-	if(LaserShot.x >= NotP2.x && LaserShot.x <= NotP2.x + 
-		NotP2.width && LaserShot.y >= NotP2.y && LaserShot.y <= 
-		NotP2.y + NotP2.height)
-	{ 
-	 alert("TEST");
-
+function NotP2BulletCollided(){
+	for(let i = 0; i < NotP1.laserPool.length; i++) {
+		if(NotP1.laserPool[i].x >= NotP2.x && NotP1.laserPool[i].x <= NotP2.x + 
+			10 && NotP1.laserPool[i].y >= NotP2.y && NotP1.laserPool[i].y <= 
+			NotP2.y + 10)
+		{ 
+		 alert("Player 2 died, Press Ctrl + R to restart");
+	
+		}
 	}
-}
-console.log(NotP1BulletCollided);
+	}
+	function NotP1BulletCollided(){
+		for(let i = 0; i < NotP2.laserPool.length; i++) {
+			if(NotP2.laserPool[i].x >= NotP1.x && NotP2.laserPool[i].x <= NotP1.x + 
+				20 && NotP2.laserPool[i].y >= NotP1.y && NotP2.laserPool[i].y <= 
+				NotP1.y + 20)
+			{ 
+			 alert("Player 1 died, Press Ctrl + R to restart");
+		
+			}
+		}
+		}
+
 //==========================================================================
 // Ritar (renderar) bakgrund och alla objekt som ska visas i spelet
 // Param ctx: kontexten för och referensen till den canvas som ska renderas
