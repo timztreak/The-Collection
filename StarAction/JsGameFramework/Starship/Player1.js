@@ -89,6 +89,7 @@ class Player1
 		ctx.closePath();
 		ctx.fillStyle = "#700000";
 		ctx.fill();
+		
 
 
 
