@@ -1,5 +1,10 @@
 function restartGame(){
-	window.open('index.html');
+  var url = "index.html";
+	window.location = url;
+}
+function goBack(){
+  var url = "../../index.html";
+	window.location = url;
 }
 //Här Börjar Ljud Functions\\
 var myAudio = document.getElementById("myAudio");
