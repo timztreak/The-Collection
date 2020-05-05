@@ -50,6 +50,7 @@ var gAppStepCount;			// Räknare för antal iterationer som spel-loopen genomgå
 var NotP1;
 var NotP2;
 var imageObj = new Image();
+var explosion = new Image();
 var wall;
 //******************* END Starship game ************************************
 
@@ -68,6 +69,7 @@ function initialize() {
 	//******************* BEGIN Starship game ******************************
 	// Set a target image
 	imageObj.src = 'Images/spaceBackground.jpg';
+	explosion.src = 'art/explosion.gif'
 	//******************* END Starship game ********************************
 
 	// Kör igång spel-loopen.

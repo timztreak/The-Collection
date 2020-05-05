@@ -45,3 +45,8 @@
     
     background-color: grey;
 }
+body{
+    position: absolute;
+    background-image: url("Images/bodyBackground.jpg");
+    background-size: cover;
+}
