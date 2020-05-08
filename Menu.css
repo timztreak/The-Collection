@@ -43,7 +43,7 @@ a:hover{
   text-decoration: none;
   color: white;
 }
-.Timwork{
+.dataStrukturer{
   width: 100%;
   height: 10%;
   top: 15%;
@@ -54,10 +54,65 @@ a:hover{
   text-decoration: none;
   color: white;
 }
-.Ntihelix{
+.funktioner{
   width: 100%;
   height: 10%;
   top: 30%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.kontrollsatser{
+  width: 100%;
+  height: 10%;
+  top: 45%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.kontrollstrukturer{
+  width: 100%;
+  height: 10%;
+  top: 60%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.operatorer{
+  width: 100%;
+  height: 10%;
+  top: 75%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.Timwork{
+  width: 100%;
+  height: 10%;
+  top: 90%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.Ntihelix{
+  width: 100%;
+  height: 10%;
+  top: 105%;
   border-style: solid;
   border-radius: 1cm;
   position: absolute;
