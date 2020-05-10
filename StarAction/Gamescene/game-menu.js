@@ -3,7 +3,7 @@ function restartGame(){
 	window.location = url;
 }
 function goBack(){
-  var url = "../../index.html";
+  var url = "../MainMenu/index.html";
 	window.location = url;
 }
 //Här Börjar Ljud Functions\\
