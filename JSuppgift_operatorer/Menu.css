@@ -1,0 +1,122 @@
+body{
+  background-image: url(https://i.imgur.com/Xk6CiHt.png);
+  position: absolute;
+  width: 99%;
+  height: 98%;
+}
+.header{
+  color: white;
+  font-size: 135%;
+  margin-left: 43%;
+  margin-top: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Menu{
+  width: 13%;
+  height: 50%;
+  margin-top: 2%;
+  margin-left: 43%;
+  position: absolute;
+}
+.Menu h2{
+  margin-top: 5%;
+}
+a:hover{
+  background-color: grey;
+  color: black;
+}
+.MenuBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.75;
+  z-index: -100;
+}
+.Start{
+  width: 100%;
+  height: 10%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.dataStrukturer{
+  width: 100%;
+  height: 10%;
+  top: 15%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.funktioner{
+  width: 100%;
+  height: 10%;
+  top: 30%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.kontrollsatser{
+  width: 100%;
+  height: 10%;
+  top: 45%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.kontrollstrukturer{
+  width: 100%;
+  height: 10%;
+  top: 60%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.operatorer{
+  width: 100%;
+  height: 10%;
+  top: 75%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.Timwork{
+  width: 100%;
+  height: 10%;
+  top: 90%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.Ntihelix{
+  width: 100%;
+  height: 10%;
+  top: 105%;
+  border-style: solid;
+  border-radius: 1cm;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}

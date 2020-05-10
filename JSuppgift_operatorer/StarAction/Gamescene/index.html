@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SpaceAction</title>
+	</head>
+	<body onLoad="initialize()">
+		<canvas id="myCanvas" width="600" height="850" style="border:10px solid cyan"></canvas>
+		<script src="input_control.js"></script>
+		<link rel="stylesheet" href="game.css">
+		<!--******** BEGIN Starship game ********-->
+		<script src="Starship/LaserShot.js"></script>
+		<script src="Starship/Player1.js"></script>
+		<script src="Starship/Player2.js"></script>
+		<script src="game.js"></script>
+		<!--******** END Starship game **********-->	
+		<!--******** Här börjar Tim Hjorts arbete ********-->
+		<canvas id="p2Info" width="250" height="200" style="border-right: 10px solid cyan;border-top: 10px solid cyan;border-bottom: 10px solid cyan"></canvas>
+		<canvas id="p1Info" width="250" height="200" style="border-right: 10px solid cyan;border-top: 10px solid cyan;border-bottom: 10px solid cyan"></canvas>
+		<audio id="myAudio" src="Sounds/StarAction-Music.mp3" autoplay></audio>
+		<div class="Menu">
+			<button id="backToStart" onclick="goBack()">Back</button>
+			<button id="musicButton" onclick="togglePlay()">Mute</button>
+			<button id="restartGame" onclick="restartGame()">Restart</button>
+		</div>
+		
+		<div id ="home"> </div>
+		<script src="game-menu.js"></script>
+		<!--******** Här slutar Tim Hjorts arbete ********-->	
+		
+	</body>
+</html>

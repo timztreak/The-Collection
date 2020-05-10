@@ -1,0 +1,52 @@
+#musicButton{
+    background-color: cyan;
+    position: absolute;
+    width: 7%;
+    height: auto;
+    margin-left: 14%;
+    font-size: 125%;
+}
+#backToStart{
+    background-color:cyan;
+    position: absolute;
+    width: 7%;
+    height: auto;
+    font-size: 125%;
+}
+#restartGame{
+    background-color: cyan;
+    position: absolute;
+    width: 7%;
+    height: auto;
+    margin-left: 7%;
+    font-size: 125%;
+}
+#musicButton:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
+#backToStart:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
+#restartGame:hover{
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+}
+#p2Info{
+    position: absolute;
+    background-color: grey;
+}
+#p1Info{
+    position: relative;
+    
+    background-color: grey;
+}
+body{
+    position: absolute;
+    background-image: url("Images/bodyBackground.jpg");
+    background-size: cover;
+}

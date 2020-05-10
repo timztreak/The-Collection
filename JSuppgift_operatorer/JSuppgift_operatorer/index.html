@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<!-- Bengt Johansson 2019-05-23									      -->
+		
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body {background-color: #AAA;}
+			canvas {border:4px solid #007; background-color: #008;}
+			input {border:2px solid #007; width: 250px; }
+			#runBut {border:4px solid #585; background-color: #7F7;}
+			#taskBut1 {border:4px solid #577; background-color: #DFF;}
+			#taskBut2 {border:4px solid #675; background-color: #EFD;}
+			#taskBut3 {border:4px solid #756; background-color: #FDE;}
+			#taskBut4 {border:4px solid #667; background-color: #EEF;}
+			#taskBut5 {border:4px solid #775; background-color: #FFD;}
+			<!--
+			#taskBut6 {border:4px solid #467; background-color: #BEF;}
+			-->
+		</style>
+	</head>
+	<body onLoad="Initialise()">
+		<div>
+			<canvas id="myEditor" width="600" height="400"></canvas>
+		</div>
+		<br>
+		<div>
+			<label for="taskButtons">Välj:</label>
+			<button id="taskBut1" onclick="TaskButtonKlickEvent(0)">Uppg1</button>
+			<button id="taskBut2" onclick="TaskButtonKlickEvent(1)">Uppg2</button>
+			<button id="taskBut3" onclick="TaskButtonKlickEvent(2)">Uppg3</button>
+			<button id="taskBut4" onclick="TaskButtonKlickEvent(3)">Uppg4</button>
+			<button id="taskBut5" onclick="TaskButtonKlickEvent(4)">Uppg5</button>
+			<!--
+			<button id="taskBut6" onclick="TaskButtonKlickEvent(5)">Uppg6</button>
+			-->
+		</div>
+		<br>
+		<div>
+			<label for="myInputX">Indata X:</label>
+			<input id="myInputX" type="text"  >
+			<label for="myInputY">Indata Y:</label>
+			<input id="myInputY" type="text"  >
+			<button id="runBut" onclick="RunButtonHandleKlickEvent()">Kör!</button>
+		</div>
+		<script src="Programmeringsuppgifter\JsUppgifter.js"></script>
+		<script src="JsPlayground.js"></script>
+	</body>
+</html>
