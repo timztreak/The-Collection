@@ -22,7 +22,7 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
   isPlaying = false;
 };
-
+/*
 function p2Info(){
   var c = document.getElementById("p2Info")
   var ctx = c.getContext("2d");
@@ -60,3 +60,5 @@ function p1Info(){
   
 };
 p1Info();
+*/
+

@@ -1,4 +1,4 @@
-#musicButton{
+/*#musicButton{
     background-color: cyan;
     position: absolute;
     width: 7%;
@@ -35,8 +35,8 @@
     background-color: black;
     opacity: 0.85;
     color: white;
-}
-#p2Info{
+}*/
+/*#p2Info{
     position: absolute;
     background-color: grey;
 }
@@ -44,9 +44,34 @@
     position: relative;
     
     background-color: grey;
-}
+}*/
 body{
     position: absolute;
-    background-image: url("Images/bodyBackground.jpg");
+    background-image: url("art/gamescene-wallpaper.png");
     background-size: cover;
+    background-repeat: no-repeat;
+}
+#myCanvas{
+    position: absolute;
+    height: 850;
+    width: 600;
+    left: 450pt;  
+}
+#backToStart{
+    position: absolute;
+    width: 250pt;
+    height: 35pt;
+    top: 150pt;
+}
+#musicButton{
+    position: absolute;
+    width: 250pt;
+    height: 35pt;
+    top: 250pt;
+}
+#restartGame{
+    position: absolute;
+    width: 250pt;
+    height: 35pt;
+    top: 200pt;
 }
