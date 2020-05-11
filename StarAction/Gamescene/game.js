@@ -185,7 +185,7 @@ function NotP2BulletCollided(){
 			10 && NotP1.laserPool[i].y >= NotP2.y && NotP1.laserPool[i].y <= 
 			NotP2.y + 10)
 		{ 
-		 alert("Player 2 died, Press Ctrl + R to restart");
+			return p2DeathScene();
 	
 		}
 	}
@@ -196,7 +196,7 @@ function NotP2BulletCollided(){
 				20 && NotP2.laserPool[i].y >= NotP1.y && NotP2.laserPool[i].y <= 
 				NotP1.y + 20)
 			{ 
-			 alert("Player 1 died, Press Ctrl + R to restart");
+				return p1DeathScene();
 		
 			}
 		}
@@ -256,18 +256,22 @@ function draw(ctx) {
 		if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
 		   NotP1.y <= Wall3.y + Wall3.height &&
 		   NotP1.y >= Wall3.y || NotP1.y >= 850) {
-			 alert("Player 1 died, Player 2 Wins");
+			return p1DeathScene();
 		}
 	  
 		if(NotP2.x <= Wall1.x || NotP2.x >= Wall2.x || 
 		   NotP2.y <= Wall3.y + Wall3.height &&
 		   NotP2.y >= Wall3.y || NotP2.y <= 0) {
-			 return p1DeathScene();
+			return p1DeathScene();
 		  }
 		Wall3.draw(ctx);
 	  }
 
 	  function p1DeathScene(){
-		var url = "Deathscenes/P1DeathScene/index.html";
+		var url = "../Deathscene/P1DeathScene/P1Death.html";
+		  window.location = url;
+	  }	  
+	  function p2DeathScene(){
+		var url = "../Deathscene/P2DeathScene/P2Death.html";
 		  window.location = url;
 	  }	  
