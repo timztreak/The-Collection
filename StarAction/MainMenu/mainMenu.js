@@ -4,7 +4,7 @@ function startGame(){
     window.location = gameScene;
 }
 function controlInfo(){
-    var controlScene ="../ControlScenes"
+    var controlScene ="../ControlScenes/control.html"
     window.location =controlScene;
 }
 function goBackToMenu(){

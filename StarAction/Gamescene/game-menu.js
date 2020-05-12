@@ -8,6 +8,7 @@ function goBack(){
 }
 //Här Börjar Ljud Functions\\
 var myAudio = document.getElementById("myAudio");
+myAudio.volume = 0.05;
 var isPlaying = false;
 function togglePlay() {
   if (isPlaying) {

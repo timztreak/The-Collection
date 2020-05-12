@@ -1,0 +1,23 @@
+body{
+    background-image: url(Art/control-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p2Info{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    background-color: grey;
+}
+#p1Info{
+    position: absolute;
+    left: 26%;
+    top: 40%;
+    background-color: grey;
+}
+#backToMenu{
+    position: absolute;
+    width: 250pt;
+    height: 35pt;
+    top: 150pt;
+}
