@@ -11,4 +11,7 @@ function goBackToMenu(){
     var theCollection ="../../index.html"
     window.location = theCollection;
 }
-
+function contact(){
+    var contactForm ="https://www.timworksupport.tech/#contact"
+    window.location = contactForm;
+}

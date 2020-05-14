@@ -19,7 +19,13 @@ body{
     position: absolute;
     width: 250pt;
     height: 30pt;
-    margin-top: 18%;
+    margin-top: 21%;
+}
+#contactButton{
+  position: absolute;
+  width: 250pt;
+  height: 35pt;
+  margin-top: 18%;
 }
 #gameInformation{
     position: absolute;
