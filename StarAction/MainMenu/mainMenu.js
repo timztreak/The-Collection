@@ -11,3 +11,4 @@ function goBackToMenu(){
     var theCollection ="../../index.html"
     window.location = theCollection;
 }
+

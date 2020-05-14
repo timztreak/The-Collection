@@ -7,7 +7,7 @@ function goBack(){
 	window.location = url;
 }
 //Här Börjar Ljud Functions\\
-var myAudio = document.getElementById("myAudio");
+var myAudio = document.getElementById("gameMusicControler");
 myAudio.volume = 0.05;
 var isPlaying = false;
 function togglePlay() {
@@ -23,6 +23,23 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
   isPlaying = false;
 };
+var start = new Date().getTime(),
+  score = '0.1';
+
+var interval = window.setInterval(function() {
+  var time = new Date().getTime() - start;
+  
+  score = Math.floor(time / 100);
+  
+  if(score === 100) { 
+    window.clearInterval(interval); 
+    if(!alert("You guys didn't kill each other fast enough!\nPress 'OK' to play again, please kill each other this time")){
+        window.location.reload();
+    } 
+  }
+
+  document.getElementById('displayScore').innerHTML = score += '.00 Score';
+});
 /*
 function p2Info(){
   var c = document.getElementById("p2Info")
@@ -62,4 +79,15 @@ function p1Info(){
 };
 p1Info();
 */
+
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("myAudio");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 

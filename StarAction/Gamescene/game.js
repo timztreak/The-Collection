@@ -170,6 +170,8 @@ function update() {
 	NotP1BulletCollided();
 	NotP1.update();
 	NotP2.update();
+	
+	
 	//******************* END Starship game ********************************
 	//######################################################################
 	//# OBS! Skriv din egen kod för uppdateringar här. Detta kan göras direkt
@@ -179,13 +181,27 @@ function update() {
 
 	return 0;
 }
+function WallCollision(){
+	if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
+	   NotP1.y <= Wall3.y + Wall3.height &&
+	   NotP1.y >= Wall3.y || NotP1.y >= 850) {
+		window.location = "../Deathscene/P1DeathScene/P1Death.html";
+	}
+  
+	if(NotP2.x <= Wall1.x || NotP2.x >= Wall2.x || 
+	   NotP2.y <= Wall3.y + Wall3.height &&
+	   NotP2.y >= Wall3.y || NotP2.y <= 0) {
+		window.location = "../Deathscene/P2DeathScene/P2Death.html";
+	  }
+	
+  }
 function NotP2BulletCollided(){
 	for(let i = 0; i < NotP1.laserPool.length; i++) {
 		if(NotP1.laserPool[i].x >= NotP2.x && NotP1.laserPool[i].x <= NotP2.x + 
 			10 && NotP1.laserPool[i].y >= NotP2.y && NotP1.laserPool[i].y <= 
 			NotP2.y + 10)
 		{ 
-			return p2DeathScene();
+			window.location = "../Deathscene/P2DeathScene/P2Death.html";
 	
 		}
 	}
@@ -193,10 +209,10 @@ function NotP2BulletCollided(){
 	function NotP1BulletCollided(){
 		for(let i = 0; i < NotP2.laserPool.length; i++) {
 			if(NotP2.laserPool[i].x >= NotP1.x && NotP2.laserPool[i].x <= NotP1.x + 
-				20 && NotP2.laserPool[i].y >= NotP1.y && NotP2.laserPool[i].y <= 
-				NotP1.y + 20)
+				10 && NotP2.laserPool[i].y >= NotP1.y && NotP2.laserPool[i].y <= 
+				NotP1.y + 10)
 			{ 
-				return p1DeathScene();
+				return window.location = "../Deathscene/P1DeathScene/P1Death.html";
 		
 			}
 		}
@@ -224,6 +240,7 @@ function draw(ctx) {
 	NotP1.draw(ctx);
 	NotP2.draw(ctx);
 	WallCollision(ctx);
+	Wall3.draw(ctx);
 	
 	//******************* END Starship game ********************************
 	
@@ -246,32 +263,11 @@ function draw(ctx) {
 			ctx.fillStyle = this.color;
 			ctx.fillRect(this.x, this.y, this.width, this.height);
 		}
-	}
-	var Wall1 = new Wall(-1, 0, 3, 850, "cyan"); 
-    var Wall2 = new Wall(600, 0, 3, 850, "cyan");
-	var Wall3 = new Wall(0, 422, 600, 5, "cyan");
-	var spawn1 = new Wall(300, 750, 0, 0, "cyan");	
-	
-	function WallCollision(ctx){
-		if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
-		   NotP1.y <= Wall3.y + Wall3.height &&
-		   NotP1.y >= Wall3.y || NotP1.y >= 850) {
-			return p1DeathScene();
+		update(){
+			
 		}
-	  
-		if(NotP2.x <= Wall1.x || NotP2.x >= Wall2.x || 
-		   NotP2.y <= Wall3.y + Wall3.height &&
-		   NotP2.y >= Wall3.y || NotP2.y <= 0) {
-			return p1DeathScene();
-		  }
-		Wall3.draw(ctx);
-	  }
-
-	  function p1DeathScene(){
-		var url = "../Deathscene/P1DeathScene/P1Death.html";
-		  window.location = url;
-	  }	  
-	  function p2DeathScene(){
-		var url = "../Deathscene/P2DeathScene/P2Death.html";
-		  window.location = url;
-	  }	  
+	}
+	var Wall1 = new Wall(-1, 0, 10, 850, "cyan"); 
+    var Wall2 = new Wall(600, 0, 10, 850, "cyan");
+	var Wall3 = new Wall(0, 422, 600, 10, "cyan");
+	

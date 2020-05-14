@@ -7,10 +7,27 @@
     <title>Star Action-Menu</title>
 </head>
 <link rel="stylesheet" href="mainMenu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <body>
-    <script src="mainMenu.js"></script>
+    <div id="player" autoplay>
+		<i class="fa fa-volume-down" autoplay></i>
+		<div id="volume" autoplay></div>
+		<i class="fa fa-volume-up" autoplay></i>
+	</div>
+    <div id="gameInformation"> 
+        <h1>What is the goal of this game?</h1>
+        <p>The goal is to kill each other before the time runs out, so you need to be fast with killing eachother </p> 
+        <p>Beware though, you dont have much time.</p> 
+        <p>Because when the score reaches 100, its Game Over</p> 
+        
+        <div class="gameInfoBox"></div>
+    </div>
     <button id="startGame" onclick= startGame()>Start</button>
     <button id="controls"onclick= controlInfo()>Controls</button>
     <button id="theCollection"onclick= goBackToMenu()>Back to The Collection</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="mainMenu.js"></script>
 </body>
 </html>

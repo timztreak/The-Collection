@@ -88,6 +88,7 @@ class LaserShotP2
 		if (this.y == 0) {		
 			this.x = originX;
 			this.y = originY;
+	
 		}
 	}
 	
@@ -104,8 +105,9 @@ class LaserShotP2
 			// Friställ lasern
 			this.y = 0;
 		}
+		
 	}
-
+	
 	//==========================================================================
 	// Lasern ritas ut i canvas.
 	//==========================================================================
@@ -117,4 +119,10 @@ class LaserShotP2
 			ctx.fillRect(this.x - (this.width / 2), this.y + this.length, this.width, this.length);
 		}
 	}
+}
+function laserLjud(){
+	var laserSkot = new Audio("laserskot.mp3");
+			laserSkot.src = "laserskot.mp3#t0.0, 0.3";
+			laserSkot.volume = 0.1;
+			laserSkot.play();
 }

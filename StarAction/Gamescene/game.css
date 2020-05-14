@@ -53,6 +53,7 @@ body{
 }
 #myCanvas{
     position: absolute;
+    top: 3em;
     height: 850;
     width: 600;
     left: 450pt;  
@@ -74,4 +75,19 @@ body{
     width: 250pt;
     height: 35pt;
     top: 200pt;
+}
+#gameMusicControler{
+    position: absolute;
+    top: 55em;
+    width: 25em;
+    height: 2em;
+}
+#displayScore{
+    color: white;
+    position: absolute;
+    width: 15em;
+    height: 5em;
+    font-family: Unispace;
+    font-size: 2em;
+    left: 25em;
 }
