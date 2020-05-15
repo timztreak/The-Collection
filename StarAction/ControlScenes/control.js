@@ -1,3 +1,4 @@
+/*Spelare 2 informations box*/
 function p2Info(){
     var c = document.getElementById("p2Info")
     var ctx = c.getContext("2d");
@@ -17,8 +18,7 @@ function p2Info(){
     p2Right = ctx.font = "15px Unispace", ctx.fillText("Color: Cyan", 10, 200);
     
   };
-  p2Info();
-  
+  /*Spelare 1 informations box*/
   function p1Info(){
     var c = document.getElementById("p1Info")
     var ctx = c.getContext("2d");
@@ -37,8 +37,11 @@ function p2Info(){
     var p1Color;
     p1Right = ctx.font = "15px Unispace", ctx.fillText("Color: Red", 10, 200);
   };
-  p1Info();
+  /*Funktion för att ta sig till huvudmenyn, med en knapp tex*/
   function backToMenu(){
     var theCollection ="../MainMenu/index.html"
     window.location = theCollection;
 }
+  //Kallar på funktionärerna ovan
+  p1Info();
+  p2Info();

@@ -181,6 +181,7 @@ function update() {
 
 	return 0;
 }
+/*Wall Collision detection */
 function WallCollision(){
 	if(NotP1.x <= Wall1.x || NotP1.x >= Wall2.x || 
 	   NotP1.y <= Wall3.y + Wall3.height &&
@@ -195,6 +196,8 @@ function WallCollision(){
 	  }
 	
   }
+  /*LaserShot Collision detection */
+  // Player 2
 function NotP2BulletCollided(){
 	for(let i = 0; i < NotP1.laserPool.length; i++) {
 		if(NotP1.laserPool[i].x >= NotP2.x && NotP1.laserPool[i].x <= NotP2.x + 
@@ -205,6 +208,7 @@ function NotP2BulletCollided(){
 	
 		}
 	}
+	// Player 1
 	}
 	function NotP1BulletCollided(){
 		for(let i = 0; i < NotP2.laserPool.length; i++) {
@@ -249,7 +253,7 @@ function draw(ctx) {
 	//#      eller genom anrop till andra funktioner eller metoder i objekt.
 	//######################################################################
 }
-	//Väggar
+	/* Wall class, wall objekts */
 	class Wall{
 		constructor(x, y, w, h, c){
 			this.x = x;
@@ -267,6 +271,7 @@ function draw(ctx) {
 			
 		}
 	}
+	//Väggar
 	var Wall1 = new Wall(-1, 0, 10, 850, "cyan"); 
     var Wall2 = new Wall(600, 0, 10, 850, "cyan");
 	var Wall3 = new Wall(0, 422, 600, 10, "cyan");
